@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_add_category">
+
+    <EditText
+        android:id="@+id/categoryname"
+        android:layout_width="match_parent"
+        android:hint="Category Name"
+        android:layout_margin="10dp"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/cat_submit"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"
+        android:textColor="#fff"
+        android:layout_margin="10dp"
+        android:background="@color/colorAccent"
+        android:layout_below="@id/categoryname"/>
+
+    <ListView
+        android:id="@+id/cat_list"
+        android:layout_below="@id/cat_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+</RelativeLayout>

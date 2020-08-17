@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/icons_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_addexpense"
+            android:icon="@drawable/icons_report"
+            android:title="Add Expense" />
+        <item
+            android:id="@+id/nav_addincome"
+            android:icon="@drawable/icons_report"
+            android:title="Add Income" />
+        <item
+            android:id="@+id/nav_addcategory"
+            android:icon="@drawable/icons_medium"
+            android:title="Add Category" />
+        <item
+            android:id="@+id/nav_viewexpense"
+            android:icon="@drawable/icons_add"
+            android:title="View Expense" />
+
+        <item
+            android:id="@+id/nav_viewincome"
+            android:icon="@drawable/icons_inc"
+            android:title="View Income" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
+
+
+</menu>

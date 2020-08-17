@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ethical_hacker.myapplication2.UpdateExpense"
+    tools:showIn="@layout/activity_update_expense">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/upd_expense_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="Update Expense"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30dp" />
+
+
+            <EditText
+                android:id="@+id/upd_amt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/upd_expense_title"
+                android:layout_margin="20dp"
+                android:background="@drawable/edittext"
+                android:gravity="center"
+                android:hint="Enter the amount"
+                android:inputType="number" />
+
+            <Spinner
+                android:id="@+id/upd_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/upd_amt"
+                android:layout_margin="20dp"
+                android:background="@drawable/edittext" />
+
+            <EditText
+                android:id="@+id/upd_date1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/upd_spinner"
+                android:layout_margin="20dp"
+                android:background="@drawable/edittext"
+                android:focusable="false"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/upd_comment"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/upd_date1"
+                android:layout_margin="20dp"
+                android:background="@drawable/edittext"
+                android:gravity="center"
+                android:hint="Type a comment" />
+
+
+            <Button
+                android:id="@+id/upd_submit"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/upd_comment"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="Update"
+                android:textColor="#fff" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
